@@ -35,4 +35,6 @@ First of all, I have removed all of my personal access keys and tokens, you need
 
 after successfuly obtaining all the necessary tokens and changing them, you need to have WAMPSERVER running (localhost DB), you also need to make the database visible by runnig the following command: "python pagekite.py" assuming you are on windows and you have oython 2.7 installed.
 
+if you want to recieve updated news headlines, you can run the Crawler.py script that gets new headlines automatically.
+
 after that you need to have android studio to run the application, first, import Tweets4news inside android studio, then run the emulator (i have used GenyMotion, you can use intel's built in simulator) and press run, the application will be running on the emulator.
