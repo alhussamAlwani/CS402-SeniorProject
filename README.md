@@ -1,8 +1,22 @@
 # CS402-SeniorProject
 
+TWEETS4NEWS
+
+is an application that allows users to be able to see what other tweet about a specific news headline.
+
+Prequisites:
+Twitter Dev Account
+Fabric.io Dev Account
+İTÜ NLP Account
+Python 2.7
+Android Studio, Gradle: 2.3.2
+Android Simulator (preferably GenyMotion)
+WAMPSERVER (for DB and tables)
+PageKite Account
+
 This is a Graduation Project done by: ALHUSSAM ALWANI, Supervised by: Prof.Reyyan Yeniterzi.
 
-This is a instruction sheet on how to compile and run the project.
+This is an instruction sheet on how to compile and run the project:
 
 First of all, I have removed all of my personal access keys and tokens, you need to have 4 different access keys to run the application:
 1- Fabric.io API key (you can change it from the manifest)
