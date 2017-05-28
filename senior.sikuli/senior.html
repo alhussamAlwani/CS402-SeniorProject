@@ -1,0 +1,150 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>senior.sikuli</h2> <a href="senior.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">import</span> random
+
+<span class="cmt">#Stopping HotKey</span>
+running = True
+
+<span class="kw">def</span> runHotkey(event):
+    <span class="kw">global</span> running
+    running = False
+
+Env.addHotkey(Key.F1, KeyModifier.CTRL, runHotkey)
+
+<span class="cmt">#List Of Images</span>
+AppList = []
+
+emailField = <img src="1496011059869.png" />
+AppList.append(emailField)
+passField = <img src="passField.png" />
+AppList.append(passField)
+loginField = <img src="loginField.png" />
+AppList.append(loginField)
+signUpField = <img src="signUpField.png" />
+AppList.append(signUpField)
+fullNameField = <img src="fullNameField.png" />
+AppList.append(fullNameField)
+emailField2 = <img src="emailField2.png" />
+AppList.append(emailField2)
+passField2 = <img src="passField2.png" />
+AppList.append(passField2)
+registerField = <img src="registerField.png" />
+AppList.append(registerField)
+logMeInField = <img src="logMeInField.png" />
+AppList.append(logMeInField)
+logoutField = <img src="logoutField.png" />
+AppList.append(logoutField)
+signInWithTwitter = <img src="signInWithTwitter.png" />
+AppList.append(signInWithTwitter)
+authorizeAppField = <img src="authorizeAppField.png" />
+AppList.append(authorizeAppField)
+hurriyet = Pattern(<img src="hurriyet.png" />).targetOffset(-<span class="dig">1</span>,<span class="dig">51</span>)
+AppList.append(hurriyet)
+cumhuriyet = Pattern(<img src="cumhuriyet.png" />).targetOffset(-<span class="dig">6</span>,<span class="dig">55</span>)
+AppList.append(cumhuriyet)
+anayurt = Pattern(<img src="anayurt.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">58</span>)
+AppList.append(anayurt)
+star = Pattern(<img src="star.png" />).targetOffset(-<span class="dig">6</span>,<span class="dig">51</span>)
+AppList.append(star)
+cnnTurk = Pattern(<img src="cnnTurk.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">62</span>)
+AppList.append(cnnTurk)
+yenisafak = Pattern(<img src="yenisafak.png" />).targetOffset(-<span class="dig">2</span>,<span class="dig">49</span>)
+AppList.append(yenisafak)
+sabah = Pattern(<img src="sabah.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">54</span>)
+AppList.append(sabah)
+aksam = Pattern(<img src="aksam.png" />).targetOffset(-<span class="dig">2</span>,<span class="dig">52</span>)
+AppList.append(aksam)
+dw = Pattern(<img src="dw.png" />).targetOffset(-<span class="dig">5</span>,<span class="dig">54</span>)
+AppList.append(dw)
+euroNews = Pattern(<img src="euroNews.png" />).targetOffset(-<span class="dig">2</span>,<span class="dig">55</span>)
+AppList.append(euroNews)
+ajHaber = Pattern(<img src="ajHaber.png" />).targetOffset(<span class="dig">2</span>,<span class="dig">54</span>)
+AppList.append(ajHaber)
+aHaber = Pattern(<img src="aHaber.png" />).targetOffset(<span class="dig">7</span>,<span class="dig">58</span>)
+AppList.append(aHaber)
+aa = Pattern(<img src="aa.png" />).targetOffset(-<span class="dig">4</span>,<span class="dig">62</span>)
+AppList.append(aa)
+gg = Pattern(<img src="gg.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">57</span>)
+AppList.append(gg)
+
+
+<span class="kw">while</span> running:
+    randonNum = random.randint(<span class="dig">0</span>, len(AppList) - <span class="dig">1</span>)
+    <span class="kw">print</span> randonNum
+    <span class="kw">if</span> exists(AppList[randonNum]):
+        <span class="skw">click</span>(AppList[randonNum])
+    <span class="kw">else</span>:
+        <span class="kw">continue</span>
+</pre>
+</body>
+</html>
