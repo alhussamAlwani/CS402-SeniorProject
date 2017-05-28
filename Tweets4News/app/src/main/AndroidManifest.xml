@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hussamalwani.tweets4news">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+
+        <activity
+            android:name="activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activity.RegisterActivity"
+            android:label="@string/Register"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/welcome"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/NewsSources"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Hurriyet"
+            android:label="@string/HURRIYET"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.CNNTURK"
+            android:label="@string/CnnTurk"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Tweets"
+            android:label="@string/SearchResults"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.AA"
+            android:label="@string/AA"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.AHaber"
+            android:label="@string/AHBR"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.AjansHaber"
+            android:label="@string/AjHaber"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Aksam"
+            android:label="@string/Aksam"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Anayurt"
+            android:label="@string/Anayurt"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Cumhuriyet"
+            android:label="@string/Cumhuriyet"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.DW"
+            android:label="@string/DW"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.EuroNews"
+            android:label="@string/Euronews"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.GercekGundem"
+            android:label="@string/GercekGundem"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Sabah"
+            android:label="@string/Sabah"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Star"
+            android:label="@string/Star"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="sources.Yenisafak"
+            android:label="@string/Yenisafak"
+            android:launchMode="singleTop" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4b578ddc77ed5a46c2b07f3b2006b3008754709a" />
+
+        <activity
+            android:name=".TwitterSearch"
+            android:label="@string/SearchResults"
+            android:launchMode="singleTop" >
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.hussamalwani.tweets4news.TwitterSearch" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+    </application>
+</manifest>

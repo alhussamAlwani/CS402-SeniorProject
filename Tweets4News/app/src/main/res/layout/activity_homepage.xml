@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/back"
+
+    tools:context="com.example.hussamalwani.tweets4news.HomePage">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:text="@string/HURRIYET"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hurriyetBtn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/hurriyetImg"
+        android:layout_marginStart="6dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rsz_hurriyetlogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/hurriyetImg"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/cnnTurkImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hurriyetBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/rsz_cnnturklogo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anayurtBtn" />
+
+    <Button
+        android:id="@+id/anayurtBtn"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hurriyetBtn"
+        android:layout_below="@+id/cnnTurkImg"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Anayurt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anayurtImg" />
+
+    <ImageView
+        android:id="@+id/anayurtImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anayurtBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/rsz_anayurt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hurriyetBtn" />
+
+    <Button
+        android:text="@string/CnnTurk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Button"
+        android:id="@+id/cnnturkBtn"
+        android:layout_below="@+id/anayurtImg"
+        android:layout_alignStart="@+id/anayurtBtn"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/cnnTurkImg"
+        android:layout_marginStart="6dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/sabahImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_sabah"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cnnturkBtn" />
+
+    <Button
+        android:id="@+id/sabahBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:theme="@style/AppTheme.Button"
+        android:layout_marginTop="0dp"
+        android:text="@string/Sabah"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sabahImg" />
+
+    <ImageView
+        android:id="@+id/cumhuriyetImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_cumhuriyet"
+        app:layout_constraintLeft_toRightOf="@+id/hurriyetImg"
+        android:layout_marginStart="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/cumhuriyetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Button"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Cumhuriyet"
+        app:layout_constraintLeft_toRightOf="@+id/hurriyetBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cumhuriyetImg" />
+
+    <ImageView
+        android:id="@+id/starImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_star"
+        app:layout_constraintLeft_toRightOf="@+id/anayurtImg"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cumhuriyetBtn"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/starBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Button"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Star"
+        app:layout_constraintLeft_toRightOf="@+id/anayurtBtn"
+        app:layout_constraintTop_toBottomOf="@+id/starImg"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/yenisafakImg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/rsz_yenisafak"
+        app:layout_constraintLeft_toRightOf="@+id/cnnTurkImg"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/starBtn"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/yenisafakBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Yenisafak"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toRightOf="@+id/cnnturkBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yenisafakImg" />
+
+    <ImageView
+        android:id="@+id/aksamImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_aksam"
+        app:layout_constraintLeft_toRightOf="@+id/sabahImg"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/yenisafakBtn"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/aksamBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="0dp"
+        android:theme="@style/AppTheme.Button"
+        android:text="@string/Aksam"
+        app:layout_constraintLeft_toRightOf="@+id/sabahBtn"
+        app:layout_constraintTop_toBottomOf="@+id/aksamImg"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/dwImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_dw"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/sabahBtn"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/dwBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/DW"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dwImg" />
+
+    <ImageView
+        android:id="@+id/ajhaberImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_ajanshaber"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/dwBtn"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/ajhaberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/AjHaber"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajhaberImg" />
+
+    <ImageView
+        android:id="@+id/aaImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_anadoluajans"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ajhaberBtn"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/aaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/AA"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/eunewsImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_euronews"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/aksamBtn"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/dwImg"
+        android:layout_marginStart="140dp" />
+
+    <Button
+        android:id="@+id/eunewsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="-40dp"
+        android:text="@string/Euronews"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toRightOf="@+id/dwBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eunewsImg" />
+
+    <ImageView
+        android:id="@+id/ahbrImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_ahaber"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/eunewsBtn"
+        app:layout_constraintLeft_toRightOf="@+id/ajhaberImg"
+        android:layout_marginStart="140dp" />
+
+    <Button
+        android:id="@+id/ahbrBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/AHBR"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toRightOf="@+id/ajhaberBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ahbrImg" />
+
+    <ImageView
+        android:id="@+id/ggImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_gercekgundem"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ahbrBtn"
+        app:layout_constraintLeft_toRightOf="@+id/aaImg"
+        android:layout_marginStart="140dp" />
+
+    <Button
+        android:id="@+id/ggBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/GercekGundem"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/aaBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ggImg" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

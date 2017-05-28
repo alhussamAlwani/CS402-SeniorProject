@@ -1,0 +1,13 @@
+http://www.hurriyet.com.tr/rss/anasayfa
+http://www.cnnturk.com/feed/rss/news
+http://www.cumhuriyet.com.tr/rss/son_dakika.xml
+http://yenisafak.com.tr/Rss
+http://www.aksam.com.tr/cache/rss.xml
+http://www.anayurtgazetesi.com/sondakika.xml
+http://www.gercekgundem.com/rss
+http://aa.com.tr/tr/rss/default?cat=guncel
+http://www.ahaber.com.tr/rss/anasayfa.xml
+http://feeds.feedburner.com/euronews/tr/home
+http://www.ajanshaber.com/rss
+http://rss.dw.com/rdf/rss-tur-all
+http://www.sabah.com.tr/rss/anasayfa.xml
