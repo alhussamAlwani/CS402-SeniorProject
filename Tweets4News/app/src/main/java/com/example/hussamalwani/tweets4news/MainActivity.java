@@ -28,9 +28,9 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 public class MainActivity extends Activity {
 
-    private static final String TWITTER_KEY = "21wbxIeZwKwPy9Xi4Ul5M6BOg";
-    private static final String TWITTER_SECRET = "O77msCvgPu5G2EyDhfxwrZ6JSkIA2uAT4txYMJpBPrDL8zHMTK";
 
+    private static final String TWITTER_KEY = "CHANGE THIS";
+    private static final String TWITTER_SECRET = "CHANGE THIS";
 
     private TextView txtName;
     private TextView txtEmail;

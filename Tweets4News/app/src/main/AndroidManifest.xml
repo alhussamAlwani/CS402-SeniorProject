@@ -103,7 +103,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="4b578ddc77ed5a46c2b07f3b2006b3008754709a" />
+            android:value="CHANGE THIS VALUE" />
 
         <activity
             android:name=".TwitterSearch"

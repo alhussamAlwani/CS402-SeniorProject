@@ -45,7 +45,7 @@ public class TextAnalyzer {
 */
             parameters.add(new BasicNameValuePair("tool", "normalize"));
             parameters.add(new BasicNameValuePair("input", input));
-            parameters.add(new BasicNameValuePair("token", "lsXaRDk1sc0e3yy4xyeo7YSFiQqiNchR"));
+            parameters.add(new BasicNameValuePair("token", "CHANGE THIS"));
 
             post.setEntity(new UrlEncodedFormEntity(parameters, "UTF-8"));
             HttpResponse resp = client.execute(post);

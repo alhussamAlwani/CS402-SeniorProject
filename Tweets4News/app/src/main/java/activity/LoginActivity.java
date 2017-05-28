@@ -34,8 +34,8 @@ import helper.SessionManager;
 public class LoginActivity extends Activity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "21wbxIeZwKwPy9Xi4Ul5M6BOg";
-    private static final String TWITTER_SECRET = "O77msCvgPu5G2EyDhfxwrZ6JSkIA2uAT4txYMJpBPrDL8zHMTK";
+    private static final String TWITTER_KEY = "CHANGE THIS";
+    private static final String TWITTER_SECRET = "CHANGE THIS";
 
 
     private static final String TAG = RegisterActivity.class.getSimpleName();
