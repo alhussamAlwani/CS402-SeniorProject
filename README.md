@@ -5,14 +5,22 @@ TWEETS4NEWS
 is an application that allows users to be able to see what other tweet about a specific news headline.
 
 Prequisites:
-Twitter Dev Account
-Fabric.io Dev Account
-İTÜ NLP Account
-Python 2.7
-Android Studio, Gradle: 2.3.2
-Android Simulator (preferably GenyMotion)
-WAMPSERVER (for DB and tables)
-PageKite Account
+
+Twitter Dev Account,
+
+Fabric.io Dev Account,
+
+İTÜ NLP Account,
+
+Python 2.7,
+
+Android Studio, Gradle: 2.3.2,
+
+Android Simulator (preferably GenyMotion),
+
+WAMPSERVER (for DB and tables),
+
+PageKite Account.
 
 This is a Graduation Project done by: ALHUSSAM ALWANI, Supervised by: Prof.Reyyan Yeniterzi.
 
