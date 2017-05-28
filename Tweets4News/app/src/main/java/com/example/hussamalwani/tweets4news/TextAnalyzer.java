@@ -19,13 +19,11 @@ import java.util.List;
 public class TextAnalyzer {
 
     private static final String TAG = TextAnalyzer.class.getName();
-    private static final String EXTENSIONS = "+Noun+A3sg+Pnon+Nom+Loc+Prop+PastPart+Verb+Pos^DB+Adj+Conj+Num+Abl+NAdj+Acc+Postp+PCNom";
-    public String analyze() {
+    public String analyze(String input, String tool) {
         //Disable AsyncTask Exception
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         String result = "";
-        String input = "izmir Cumhuriyet Savciligi koordinesinde izmir il Jandarma Komutanligi'nca bu sabah es zamanli operasyon baslatildi";
         HttpClient client = new DefaultHttpClient();
         HttpPost post = new HttpPost("http://tools.nlp.itu.edu.tr/SimpleApi");
         List<NameValuePair> parameters = new ArrayList<>(3);
@@ -43,7 +41,7 @@ public class TextAnalyzer {
                 modifiedData = modifiedData + split[i] + "\n";
             }
 */
-            parameters.add(new BasicNameValuePair("tool", "normalize"));
+            parameters.add(new BasicNameValuePair("tool", tool));
             parameters.add(new BasicNameValuePair("input", input));
             parameters.add(new BasicNameValuePair("token", "CHANGE THIS"));
 

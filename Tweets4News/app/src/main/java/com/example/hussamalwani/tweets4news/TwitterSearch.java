@@ -38,6 +38,7 @@ public class TwitterSearch extends AppCompatActivity {
 
     String MODIFY1 = "";
     String MODIFY2 = "";
+    String MODIFY3 = "";
 
     private String getFirstWord(String text) {
         if (text.indexOf(' ') > -1) { // Check if there is more than one word.
@@ -55,10 +56,15 @@ public class TwitterSearch extends AppCompatActivity {
         MODIFY1 = QueryVariables.queries.get(QueryVariables.queries.size() - 1);
         //MODIFY2 = MODIFY1.replaceAll("\\s+"," OR ");
 
-        String[] parts = MODIFY1.split(" ");
-        MODIFY2 = parts[0] + " " + parts[1] + " exclude:retweets exclude:replies";
+        TextAnalyzer ta = new TextAnalyzer();
+        MODIFY2 = ta.analyze(MODIFY1, "morphanalyzer");
+        MODIFY2 = ta.analyze(MODIFY2, "disambiguator");
+        MODIFY2 = ta.analyze(MODIFY2, "ner");
 
-        SEARCH_QUERY = MODIFY2;
+        String[] parts = MODIFY1.split(" ");
+        MODIFY3 = parts[0] + " " + parts[1] + " exclude:retweets exclude:replies OR " + parts[0] + " " + parts[1] + " " + parts[2] + " exclude:retweets exclude:replies";
+
+        SEARCH_QUERY = MODIFY3;
         //SEARCH_QUERY = ;
         QueryVariables.queries.clear();
 
